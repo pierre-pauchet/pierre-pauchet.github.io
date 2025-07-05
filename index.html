@@ -21,6 +21,11 @@
       padding: 2rem;
       text-align: center;
     }
+    nav {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
     main {
       max-width: 800px;
       margin: 2rem auto;
@@ -54,9 +59,18 @@
       <a href="mailto:pierre@example.com">Email</a>
     </p>
   </header>
-
+<nav>
+  <ul style="list-style:none; display:flex; gap:1rem; justify-content:center; padding:0;"></ul>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="projects/not-miwae.html">not-MIWAE</a></li>
+    <li><a href="projects/pyrosseta.html">Protein Design</a></li>
+    <li><a href="projects/biomethane.html">Biomethane Modeling</a></li>
+  </ul>
+</nav>
   <main>
-    <section>
+    <section id="about">
       <h2>About Me</h2>
       <p>
         I'm a master's student in machine learning and data science with a background in pharmaceutical biochemistry.
@@ -64,7 +78,7 @@
       </p>
     </section>
 
-    <section>
+    <section id="Projects">
       <h2>Projects</h2>
       <ul>
         <li><strong>not-MIWAE Extended</strong>: Masked latent inference for missing data imputation in omics.</li>
@@ -73,14 +87,10 @@
       </ul>
     </section>
 
-    <section>
+    <section id="Contact">
       <h2>Contact</h2>
       <p>Feel free to reach out for collaborations or discussion.</p>
     </section>
   </main>
-
-  <footer>
-    &copy; 2025 Pierre Pauchet — Hosted on <a href="https://pages.github.com" target="_blank">GitHub Pages</a>
-  </footer>
 </body>
 </html>
